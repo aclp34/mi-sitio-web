@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agronomía en Sonora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, #f2f2f2, #d7e7a3);
+            margin: 0;
+            padding: 0;
+            color: #4E4B3E;
+        }
+        header {
+            background-color: #A5D6A7;
+            color: #3E4A3E;
+            text-align: center;
+            padding: 30px;
+            font-size: 40px;
+            font-weight: bold;
+            border-bottom: 4px solid #3E4A3E;
+        }
+        .container {
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        .sidebar {
+            width: 240px;
+            background-color: #3E4A3E;
+            color: white;
+            padding: 25px;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+            color: #F4F1F1;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 15px;
+        }
+        .sidebar a {
+            color: #F4F1F1;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease, padding-left 0.3s ease;
+            padding-left: 0;
+        }
+        .sidebar a i {
+            margin-right: 12px;
+            font-size: 22px;
+        }
+        .sidebar a:hover {
+            color: #A5D6A7;
+            padding-left: 10px;
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 25px;
+            background: #FFF;
+            border-radius: 15px;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            width: 80%;
+            max-width: 1200px;
+            transition: margin-left 0.3s ease;
+        }
+        h2 {
+            color: #4E4B3E;
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+            border: 4px solid #4E4B3E;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        section:target {
+            background-color: rgba(46, 125, 50, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        .sidebar p {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+                height: auto;
+                box-shadow: none;
+            }
+            .content {
+                margin-left: 0;
+                width: 100%;
+            }
+            header {
+                font-size: 32px;
+                padding: 20px;
+            }
+        }
+        section:hover {
+            background-color: rgba(46, 125, 50, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Agronomía en Sonora
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Accesos Rápidos</h2>
+            <ul>
+                <li><a href="#cultivos"><i class="fas fa-seedling"></i> Cultivos Principales</a></li>
+                <li><a href="#suelo"><i class="fas fa-tractor"></i> Suelo y Fertilidad</a></li>
+                <li><a href="#tecnologia"><i class="fas fa-cogs"></i> Tecnología Agrícola</a></li>
+                <li><a href="#produccion"><i class="fas fa-palette"></i> Producción Agrícola</a></li>
+                <li><a href="#sustentabilidad"><i class="fas fa-leaf"></i> Sustentabilidad</a></li>
+            </ul>
+            <p>Alan Isaias Cordova Lopez - 204M</p>
+        </div>
+        <div class="content">
+            <section id="cultivos">
+                <h2>Cultivos Principales</h2>
+                <p>Sonora es un líder en la producción agrícola, destacando por su vasta producción de trigo, maíz, y hortalizas como el chile, el tomate, y las cebollas. Estas cosechas son vitales no solo para el abastecimiento local, sino también para exportaciones internacionales, especialmente hacia los Estados Unidos y Canadá.</p>
+                <p>El clima árido de Sonora favorece la siembra de cultivos resistentes a la sequía, lo que ha permitido a los agricultores locales optimizar el uso de recursos hídricos, como el riego tecnificado. El Estado ha incrementado su productividad mediante el uso de semillas mejoradas y tecnologías agrícolas innovadoras.</p>
+                <img src="https://img.freepik.com/fotos-premium/campo-maiz-puesta-sol-campo_34152-897.jpg" alt="Cultivos en Sonora">
+            </section>
+            <section id="suelo">
+                <h2>Suelo y Fertilidad</h2>
+                <p>El suelo en Sonora presenta una gran diversidad, desde zonas áridas como el Desierto de Sonora hasta valles fértiles como el Valle del Yaqui. Estas diferencias geográficas permiten la producción de una amplia variedad de cultivos, adaptándose a las distintas necesidades de la agricultura local.</p>
+                <p>Los suelos de la región son ricos en minerales, pero también es necesario aplicar fertilizantes y técnicas de conservación del suelo, debido a la escasez de lluvias. La fertilidad del suelo es constantemente monitoreada y gestionada con tecnologías avanzadas para maximizar la productividad de los cultivos, evitando la sobreexplotación.</p>
+                <img src="https://blob.udgtv.com/images/2023/10/18/trabajador-agricola-plantando-nueva-vida-invernadero-generado-ia-focus-0-0-696-464.jpg" alt="Suelo y fertilidad en Sonora">
+            </section>
+            <section id="tecnologia">
+                <h2>Tecnología Agrícola</h2>
+                <p>Sonora se destaca por ser pionera en la adopción de tecnología avanzada en el ámbito agrícola. Desde el uso de sistemas de riego tecnificado hasta el empleo de drones y sensores satelitales, las nuevas tecnologías están revolucionando la agricultura en la región.</p>
+                <p>Las innovaciones han permitido a los agricultores obtener un mayor control sobre el riego y la gestión de los cultivos, mejorando tanto la eficiencia en el uso del agua como la calidad de la cosecha. Además, el monitoreo remoto de las tierras agrícolas y la implementación de sistemas automatizados han incrementado la rentabilidad de las explotaciones agrícolas.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnYsGOkCYEbF8v0Ml0m9XA17LU3AwBBIYNw&usqp=CAU" alt="Tecnología en agricultura">
+            </section>
+            <section id="produccion">
+                <h2>Producción Agrícola</h2>
+                <p>La producción agrícola en Sonora es una de las más importantes a nivel nacional. Los productos agrícolas no solo abastecen el mercado interno, sino que también son clave para las exportaciones. Sonora es uno de los principales productores de granos, hortalizas y frutas en México.</p>
+                <p>Con un enfoque en la calidad y la sustentabilidad, la agricultura sonorense ha sido un modelo de eficiencia, impulsada por la investigación científica y el trabajo en equipo entre los productores, las autoridades y las universidades locales. La producción de hortalizas de ciclo corto, como el tomate y la lechuga, se ha vuelto una de las más representativas de la región.</p>
+                <img src="https://blob.expreso.com.mx/images/2024/02/25/sonora-es-lider-en-produccion-de-sandia-en-mexico-edb179f4-focus-0.18-min0.07-1300-865.png" alt="Producción agrícola en Sonora">
+            </section>
+            <section id="sustentabilidad">
+                <h2>Sustentabilidad</h2>
+                <p>En los últimos años, Sonora ha puesto un énfasis significativo en la sustentabilidad en la agricultura. Las técnicas de cultivo sostenible, el uso responsable del agua y la conservación del medio ambiente son ahora prioridades clave para los productores locales.</p>
+                <p>Además, la agricultura regenerativa está ganando terreno en Sonora, con iniciativas que promueven el reciclaje de recursos, la agroforestería y la reducción del uso de agroquímicos. Estos esfuerzos buscan garantizar que la producción agrícola sea rentable sin comprometer la salud del medio ambiente.</p>
+                <img src="https://verqor.com/_next/image?url=https%3A%2F%2Fverqor-public.s3.us-west-2.amazonaws.com%2FBlog-16-Y4PVABE9HYcLH9lxBvMG3.png&w=1920&q=75" alt="Agricultura sustentable en Sonora">
+            </section>
+        </div>
+    </div>
+</body>
+</html>
