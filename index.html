@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Tense Learning</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #f0f8ff, #dbeafe);
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2 {
+            color: #1e3a8a;
+        }
+        .story {
+            text-align: justify;
+            background: #eef2ff;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.1em;
+        }
+        .section {
+            margin-top: 20px;
+            background: #e0e7ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        button {
+            background: #1e40af;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 1em;
+        }
+        button:hover {
+            background: #1e3a8a;
+            transform: scale(1.05);
+        }
+        .progress {
+            width: 100%;
+            background: #c7d2fe;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .progress-bar {
+            width: 0%;
+            height: 15px;
+            background: #10b981;
+            border-radius: 5px;
+            transition: width 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Learning Past Tense</h1>
+        <h2>Story</h2>
+        <div class="story">
+            <p>Once upon a time, I <b>returned</b> from an amazing adventure as a time traveler. I <b>visited</b> the year 1776, where I <b>explored</b> the streets of a bustling colonial town. As I walked around, I <b>saw</b> people in traditional clothing, and I <b>felt</b> a sense of excitement in the air.</p>
+            <p>During my journey, I <b>met</b> a brave young man who <b>shared</b> his dreams of freedom. He <b>inspired</b> me with his passion for change and justice. After our conversation, I <b>packed</b> my bag with some historical items that I had <b>bought</b> from local artisans.</p>
+            <p>Later, I <b>listened</b> to the sounds of town meetings where important decisions were made. The speakers <b>played</b> powerful words that resonated with everyone present. As the sun began to set, I <b>sat</b> on a bench and <b>watched</b> the townsfolk gather around to celebrate their hopes for the future.</p>
+            <p>Before leaving this incredible era, I <b>promised</b> myself to remember this moment forever. I even <b>cleaned</b> my time travel device so it would be ready for my next adventure. Finally, as I prepared to go back home, I <b>called</b> my friends to tell them about my extraordinary journey through time.</p>
+            <p>To make it even better, while exploring, I also <b>tried</b> some delicious food that the locals made. I even <b>danced</b> with them during their celebrations and <b>wrote</b> down all my experiences in a special journal.</p>
+        </div>
+        
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <h2>Example 1 - Exercise</h2>
+        <p>Fill in the blanks with the correct past tense verb: "Yesterday, I ___ (go) to the market."</p>
+        <input type="text" id="exercise1"> <button onclick="checkAnswer1()">Submit</button>
+        
+        <h2>Example 2 - Exercise</h2>
+        <p>Which of these is in past tense?</p>
+        <button onclick="checkAnswer2('run')">Run</button>
+        <button onclick="checkAnswer2('played')">Played</button>
+        <button onclick="checkAnswer2('go')">Go</button>
+        
+        <p class="congrats" id="congratsMessage" style="display: none;">🎉 Congratulations! You've completed all activities! 🎉</p>
+        
+        <h2>Team</h2>
+        <p>Atondo Mendoza Adrian David<br> Cordova Lopez Alan Isaias<br> Martinez Cheno Mariano Jesus <br> Pablo Muñoz Erika Ximena<br> Rascon Valenzuela Amanda Nahomi</p>
+        
+        <h2>📌 UAC: English II</h2>
+      
+        <h2>📌Professor: Moises Galaz</h2>
+        
+        <h2>📌 Group/Shift: 204-M</h2>
+    </div>
+
+    <audio id="correctSound" src="https://www.myinstants.com/media/sounds/correct.mp3"></audio>
+    <audio id="wrongSound" src="https://www.myinstants.com/media/sounds/error-horn.mp3"></audio>
+
+    <script>
+        let progress = 0;
+        function checkAnswer1() {
+            let answer = document.getElementById("exercise1").value.toLowerCase();
+            if (answer === "went" && progress === 0) {
+                progress = 50;
+                document.getElementById("progressBar").style.width = progress + "%";
+                document.getElementById("correctSound").play();
+            } else {
+                document.getElementById("wrongSound").play();
+                alert("🚨 Incorrect! Try again.");
+            }
+        }
+        function checkAnswer2(choice) {
+            if (choice === "played" && progress === 50) {
+                progress = 100;
+                document.getElementById("progressBar").style.width = progress + "%";
+                document.getElementById("correctSound").play();
+                document.getElementById("congratsMessage").style.display = "block";
+            } else {
+                document.getElementById("wrongSound").play();
+                alert("🚨 Incorrect! Try again.");
+            }
+        }
+    </script>
+</body>
+</html>
